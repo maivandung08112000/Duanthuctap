@@ -1,0 +1,76 @@
+/* style slick slider */
+.slick-dots li button:before {
+  display: none;
+}
+
+.hero-slider-wrapper .slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  */
+.masonry-category-layout {
+  position: relative;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item:nth-child(4) {
+  position: absolute;
+  top: calc(100% - 268px);
+  left: 33.33%;
+  width: calc(33.33%);
+}
+
+/* Đảm bảo rằng slick-list không có padding và margin */
+.slick-list {
+    margin: 0 !important; /* Override margin nếu có */
+    padding: 0 !important; /* Override padding nếu có */
+    overflow: hidden; /* Đảm bảo không có cuộn ngang */
+  }
+  
+  /* Đảm bảo rằng slick-track cũng không có padding và margin */
+  .slick-track {
+    display: flex !important; /* Sử dụng flexbox để giữ các item ngang hàng */
+    margin: 0 !important; /* Override margin nếu có */
+  }
+  
+  /* Đảm bảo các item trong slick-item có chiều rộng chính xác */
+  .slick-slide {
+    padding: 10px; /* Có thể điều chỉnh padding */
+    box-sizing: border-box; /* Để padding không làm ảnh hưởng đến chiều rộng tổng */
+  }
+  
+  /* style product detail  */
+
+  .big-image-slider .single-image {
+    overflow: hidden; /* Để giới hạn kích thước của hình ảnh khi zoom */
+  }
+  
+  .big-image-slider .single-image img {
+    transition: transform 0.5s ease; /* Tạo hiệu ứng mượt khi zoom */
+  }
+  
+  .big-image-slider .single-image:hover img {
+    transform: scale(1.2); /* Zoom hình ảnh khi hover */
+  }
+  
+  .login-form .ant-input {
+    margin: 0;
+  }
+
+  /* style admin */
+  :where(.css-dev-only-do-not-override-vryruh).ant-layout-sider{
+    background: #fff;
+  }
+
+  :where(.css-dev-only-do-not-override-vryruh).ant-layout-sider .ant-layout-sider-trigger  {
+    background: #ebebeb;
+  }
+
+  :where(.css-dev-only-do-not-override-vryruh).ant-form-item {
+    margin-bottom: 16px;
+  }
